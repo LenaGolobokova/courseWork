@@ -8,7 +8,7 @@ import (
 )
 
 func connectDB() (*pgx.Conn, error) {
-	connStr := "postgres://postgres:lena@localhost:5432/database?search_path=data"
+	connStr := "postgres://postgres:lena@192.168.56.1:5432/database?search_path=data"
 	conn, err := pgx.Connect(context.Background(), connStr)
 	if err != nil {
 		return nil, err

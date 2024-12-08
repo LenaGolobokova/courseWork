@@ -10,6 +10,8 @@ import (
 	"golang.org/x/crypto/bcrypt"
 )
 
+
+
 func clearEntries(entries ...*widget.Entry) {
 	for _, entry := range entries {
 		entry.SetText("")

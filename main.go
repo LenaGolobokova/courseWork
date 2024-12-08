@@ -13,11 +13,6 @@ var passwordHash string
 var myApp fyne.App
 var myWindow fyne.Window
 
-func init() {
-	hashedPassword, _ := hashPassword("12345")
-	passwordHash = hashedPassword
-}
-
 func main() {
 	// Создаем приложение
 	myApp = app.New()
